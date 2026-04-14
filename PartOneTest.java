@@ -65,27 +65,31 @@ public class PartOneTest {
     }
  
     @Test
-    public void testCellPhoneIncorrectlyFormatted() {
+    public void testCellPhoneIncorrectlyFormatted() 
+    {
         User user = new User("Kyle", "Smith", "kyl_1", "Ch&&sec@ke99!", "08966553");
         assertFalse(user.checkCellPhoneNumber());
     }
  
     @Test
-    public void testLoginSuccessful() {
+    public void testLoginSuccessful() 
+    {
         User user = new User("Kyle", "Smith", "kyl_1", "Ch&&sec@ke99!", "+27838968976");
         Login login = new Login("kyl_1", "Ch&&sec@ke99!", user);
         assertTrue(login.loginUser());
     }
  
     @Test
-    public void testLoginFailed() {
+    public void testLoginFailed() 
+    {
         User user = new User("Kyle", "Smith", "kyl_1", "Ch&&sec@ke99!", "+27838968976");
         Login login = new Login("kyl_1", "wrongpassword", user);
         assertFalse(login.loginUser());
     }
  
     @Test
-    public void testReturnLoginStatusSuccess() {
+    public void testReturnLoginStatusSuccess() 
+    {
         User user = new User("Kyle", "Smith", "kyl_1", "Ch&&sec@ke99!", "+27838968976");
         Login login = new Login("kyl_1", "Ch&&sec@ke99!", user);
         String expected = "Welcome Kyle, Smith it is great to see you again.";
@@ -93,7 +97,8 @@ public class PartOneTest {
     }
  
     @Test
-    public void testReturnLoginStatusFailed() {
+    public void testReturnLoginStatusFailed() 
+    {
         User user = new User("Kyle", "Smith", "kyl_1", "Ch&&sec@ke99!", "+27838968976");
         Login login = new Login("kyl_1", "wrongpassword", user);
         String expected = "Username or password incorrect, please try again.";
