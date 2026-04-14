@@ -73,5 +73,11 @@ public class Program {
     
 
 /*REFRENCES: 
-
+JAVA Programming tenth edition, Joyce Farell, Cengage, 2016
+https://www.w3schools.com/js/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+https://www.reddit.com/r/learnjavascript/?rdt=39747
+https://youtu.be/Ihy0QziLDf0?si=z8YmOr9Fhtmijb0n
+https://youtu.be/nbX0MIV7-Ek?si=1axa-QBWB8unvwAy
+http://www.youtube.com/@BroCodez
 */
